@@ -1,0 +1,15 @@
+db:
+  url: jdbc:mysql://192.168.54.187:3306/pre_master?useUnicode=true&characterEncoding=UTF-8
+  username: pre_master
+  password: pre_master
+author: sxx
+packageName: com.bfsuol.lms2014.enl
+parentPath: enl
+title: 学生协议上传
+path:
+  controller: controller
+  service: service
+  dao: dao
+  entity: entity
+  mapper: mappers
+  ftl: ftl
