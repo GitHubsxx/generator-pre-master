@@ -64,7 +64,7 @@ public class ${ClassName}Controller extends SpringControllerSupport{
     @RequestMapping("/input/{id}")
     public String edit(@PathVariable("id") Long id, Model model){
         ${ClassName} ${EntityName} = this.${EntityName}Service.getById(id);
-        model.addAttribute(${EntityName});
+        model.addAttribute("${EntityName}",${EntityName});
 
         return getViewNamedPath("input");
     }
