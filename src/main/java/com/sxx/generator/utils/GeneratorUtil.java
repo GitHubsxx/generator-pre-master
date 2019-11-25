@@ -752,7 +752,7 @@ public class GeneratorUtil {
                 .append("\t\t<tr>\n")
                 .append("\t\t\t<td>上传附件：</td>\n")
                 .append("\t\t\t<td>\n")
-                .append("\t\t\t\t<@upload id=\""+entityData.get("EntityName")+"Id\" fileInfo=fileInfo uploadPath=\"/"+entityData.get("EntityName")+"\" fileId=\"fileId\" multiple=\"false\" allowedExtensions=\" ['jpg']\"/>\n")
+                .append("\t\t\t\t<@upload1 id=\""+entityData.get("EntityName")+"Id\" fileInfo=fileInfo uploadPath=\"/"+entityData.get("EntityName")+"\" fileId=\"fileId\" multiple=\"false\" allowedExtensions=\" ['jpg']\"/>\n")
                 .append("\t\t\t\t<b><font style=\"color:red;\">（请上传后缀名为 .doc 或 .docx 的文件）</font></b>\n")
                 .append("\t\t\t</td>\n")
                 .append("\t\t</tr>\n")
@@ -763,6 +763,14 @@ public class GeneratorUtil {
                 .append("\t\t\t\t<b><font style=\"color:red;\">（只存在一个当前有效的）</font></b>\n")
                 .append("\t\t\t</td>\n")
                 .append("\t\t</tr>\n")
+                .append("\t\t<tr>\n")
+                .append("\t\t\t<td>名称：</td>\n")
+                .append("\t\t\t<td>\n")
+                .append("\t\t\t\t<input type=\"text\" name=\"score\" value=\"${resetaScore.score}\" class=\"easyui-validatebox\" required=\"true\" missingMessage=\"必须填写名称\">\n")
+                .append("\t\t\t\t<b><font style=\"color:red;\">*</font></b> 必填\n")
+                .append("\t\t\t</td>\n")
+                .append("\t\t</tr>\n")
+
                 .append("\t</table>\n")
                 .append("</@input>");
         return sb.toString();
