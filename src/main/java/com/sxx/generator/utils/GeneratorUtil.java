@@ -733,7 +733,8 @@ public class GeneratorUtil {
                 "    *  "+time+" bfsu Create File\n" +
                 "**************************************************/" +
                 "-->\n");
-        sb.append("<#include \"/templates/back/input.ftl\">\n\n")
+        sb.append("<#include \"/templates/back/input.ftl\">\n")
+                .append("<script type=\"text/javascript\" src=\"${base}/js/My97DatePicker/WdatePicker.js\"></script>\n\n")
                 .append("<@input url=\"${base}/"+entityData.get("ParentPath")+"/"+entityData.get("EntityName")+"/save\">\n")
                 .append("\t<input type=\"hidden\" name=\"id\" value=\"${"+entityData.get("EntityName")+".id}\"/>\n")
                 .append("\t<table>\n")
