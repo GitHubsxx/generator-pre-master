@@ -747,7 +747,7 @@ public class GeneratorUtil {
                 .append("\t\t<tr>\n")
                 .append("\t\t\t<td>开始时间：</td>\n")
                 .append("\t\t\t<td>\n")
-                .append("\t\t\t\t<input type=\"text\" name=\"startTime\" value=\"${"+entityData.get("EntityName")+".startTime}\" readonly=\"readonly\" style=\"width:180px;\" data-options=\"required:false\" onclick=\"WdatePicker({startDate:'%y-%M-%d 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss'})\"/>\n")
+                .append("\t\t\t\t<input type=\"text\" name=\"startTime\" value=\"${"+entityData.get("EntityName")+".startTime}\"  data-options=\"editable:false\" class=\"easyui-datetimebox\"/>\n")
                 .append("\t\t\t</td>\n")
                 .append("\t\t</tr>\n")
                 .append("\t\t<tr>\n")
