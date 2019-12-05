@@ -603,11 +603,11 @@ public class GeneratorUtil {
                 " * Description: 列表页面\n" +
                 " * Copyright:   Copyright (c) "+s+"\n" +
                 " * Company:     beiwaionline\n" +
-                " * @author      bfsu\n" +
+                " * @author      sxx\n" +
                 " * @version     1.0\n" +
                 " * @see\n" +
                 "\tHISTORY\n" +
-                "    *  "+time+" bfsu Create File\n" +
+                "    *  "+time+" sxx Create File\n" +
                 "**************************************************/" +
                 "-->\n");
         sb.append("<#include \"/templates/back/index.ftl\">\n\n").append("<@html>\n\n").append("<@head>\n")
@@ -726,11 +726,11 @@ public class GeneratorUtil {
                 " * Description: 输入页面，包括添加和修改\n" +
                 " * Copyright:   Copyright (c) "+s+"\n" +
                 " * Company:     beiwaionline\n" +
-                " * @author      bfsu\n" +
+                " * @author      sxx\n" +
                 " * @version     1.0\n" +
                 " * @see\n" +
                 "\tHISTORY\n" +
-                "    *  "+time+" bfsu Create File\n" +
+                "    *  "+time+" sxx Create File\n" +
                 "**************************************************/" +
                 "-->\n");
         sb.append("<#include \"/templates/back/input.ftl\">\n")
@@ -791,11 +791,11 @@ public class GeneratorUtil {
                 " * Description: 简单列表页面，没有编辑功能\n" +
                 " * Copyright:   Copyright (c) "+s+"\n" +
                 " * Company:     beiwaionline\n" +
-                " * @author      bfsu\n" +
+                " * @author      sxx\n" +
                 " * @version     1.0\n" +
                 " * @see\n" +
                 "\tHISTORY\n" +
-                "    *  "+time+" bfsu Create File\n" +
+                "    *  "+time+" sxx Create File\n" +
                 "**************************************************/" +
                 "-->\n");
         sb.append("<#include \"/templates/back/list.ftl\">\n\n")
@@ -862,11 +862,11 @@ public class GeneratorUtil {
                 " * Description: 查看详情页面\n" +
                 " * Copyright:   Copyright (c) "+s+"\n" +
                 " * Company:     beiwaionline\n" +
-                " * @author      bfsu\n" +
+                " * @author      sxx\n" +
                 " * @version     1.0\n" +
                 " * @see\n" +
                 "\tHISTORY\n" +
-                "    *  "+time+" bfsu Create File\n" +
+                "    *  "+time+" sxx Create File\n" +
                 "**************************************************/" +
                 "-->\n");
         sb.append("<#include \"/templates/back/input.ftl\">\n\n")

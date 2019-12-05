@@ -2,10 +2,10 @@
  * Description: Controller for ${Title}管理
  * Copyright:   Copyright (c) 2019
  * Company:     beiwaionline
- * @author      bfsu
+ * @author      sxx
  * @version     1.0
  * @see
- *  ${Date} bfsu Create File
+ *  ${Date} sxx Create File
  **************************************************/
 package ${BasePackageName}${ControllerPackageName};
 
