@@ -704,7 +704,7 @@ public class GeneratorUtil {
                 .append("\t\t\t\t<a name=\"any\" iconCls=\"icon-edit\" data-options=\"disabled:true\" onclick=\"check();\" >批量审核</a>\n")
                 .append("\t\t\t</@sec>\n")
                 .append("\t\t\t<@sec pcode=\""+entityData.get("ParentPath")+"."+entityData.get("EntityName")+"\" fcode=\"exportList\">\n")
-                .append("\t\t\t\t<a name=\"\" iconCls=\"icon-hard\" onclick=\"check();\" >导出列表<span style=\"color:red\">(选择学期导出)</span></a>\n")
+                .append("\t\t\t\t<a name=\"\" iconCls=\"icon-hard\" onclick=\"exportList();\" >导出列表<span style=\"color:red\">(选择学期导出)</span></a>\n")
                 .append("\t\t\t</@sec>\n")
                 .append("\t\t</@button>\n")
                 .append("</@content>\n\n").append("</@body>\n\n").append("</@html>");
@@ -734,7 +734,6 @@ public class GeneratorUtil {
                 "**************************************************/" +
                 "-->\n");
         sb.append("<#include \"/templates/back/input.ftl\">\n")
-                .append("<script type=\"text/javascript\" src=\"${base}/js/My97DatePicker/WdatePicker.js\"></script>\n\n")
                 .append("<@input url=\"${base}/"+entityData.get("ParentPath")+"/"+entityData.get("EntityName")+"/save\">\n")
                 .append("\t<input type=\"hidden\" name=\"id\" value=\"${"+entityData.get("EntityName")+".id}\"/>\n")
                 .append("\t<table>\n")
