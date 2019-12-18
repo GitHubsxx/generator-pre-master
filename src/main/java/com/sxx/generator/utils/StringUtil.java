@@ -1,5 +1,7 @@
 package com.sxx.generator.utils;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.io.File;
 
 /**
@@ -21,6 +23,9 @@ public class StringUtil {
      */
     public static String firstToUpperCase(String string) {
         StringBuilder sb = new StringBuilder();
+        if (StringUtils.isBlank(string)) {
+            return sb.toString();
+        }
         sb.append(string.substring(0, 1).toUpperCase()).append(string.substring(1));
         return sb.toString();
     }
